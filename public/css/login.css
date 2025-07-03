@@ -1,0 +1,125 @@
+
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background: #f8f8fc;
+}
+.container-login {
+  display: flex;
+  min-height: 100vh;
+}
+.left {
+  flex: 1;
+  background: #d6d3fb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px 0 0 24px;
+}
+.left .icon {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.left .icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.left .icon svg text {
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  fill: #6c63ff;
+  dominant-baseline: middle;
+  alignment-baseline: middle;
+  text-anchor: middle;
+  letter-spacing: -2px;
+}
+.left h1 {
+  font-size: 48px;
+  color: #23223a;
+  font-weight: 700;
+}
+.right {
+  flex: 1;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 24px 24px 0;
+}
+.login-box {
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-box h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: #23223a;
+}
+.input-group {
+  width: 100%;
+  margin-bottom: 18px;
+}
+.input-group input {
+  width: 100%;
+  padding: 16px 16px 16px 44px;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  font-size: 18px;
+  outline: none;
+  margin-bottom: 0;
+}
+.input-group .icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c63ff;
+  font-size: 20px;
+}
+
+.button {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  display: block;
+  margin: 24px 0 16px 0;
+  padding: 16px 16px 16px 44px;
+  background: linear-gradient(90deg, #6c63ff 60%, #554ee0 100%);
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 16px #6c63ff22;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+.button:hover {
+  background: linear-gradient(90deg, #554ee0 60%, #6c63ff 100%);
+  box-shadow: 0 6px 24px #554ee044;
+}
+.forgot {
+  color: #888;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 8px;
+}
+.error {
+  color: #e74c3c;
+  font-size: 16px;
+  margin-bottom: 12px;
+  text-align: center;
+}

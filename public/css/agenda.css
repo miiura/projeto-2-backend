@@ -1,0 +1,306 @@
+body {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    background: #fafbfc;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 260px;
+    background: #f4f3ff;
+    border-radius: 20px 0 0 20px;
+    padding: 32px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 2px 16px 0 #0001;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: 32px;
+    margin-bottom: 40px;
+}
+
+.icon-calendar {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url('data:image/svg+xml;utf8,<svg fill="none" stroke="rgba(90, 80, 200, 0.8)" stroke-width="3" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="12" width="32" height="28" rx="6" stroke="rgba(90,80,200,0.8)" fill="none"/><path d="M8 20h32" stroke="rgba(90,80,200,0.8)"/><text x="24" y="36" text-anchor="middle" font-size="16" fill="rgba(90,80,200,0.8)" font-family="Arial">A</text></svg>') no-repeat center/contain;
+}
+
+.sidebar-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #23222b;
+    letter-spacing: -1px;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 32px;
+    color: #23222b;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 10px 0 0 10px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.nav-item.active, .nav-item:hover {
+    background: #e0deff;
+    color: #5a50c8;
+    font-weight: 600;
+}
+
+.icon-home::before {
+    content: "🏠";
+    font-size: 1.2em;
+}
+.icon-calendar2::before {
+    content: "📅";
+    font-size: 1.2em;
+}
+.icon-tasks::before {
+    content: "☑️";
+    font-size: 1.2em;
+}
+.icon-settings::before {
+    content: "⚙️";
+    font-size: 1.2em;
+}
+
+.content {
+    flex: 1;
+    padding: 36px 48px 36px 48px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 48px;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    background: #f4f3ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-user::before {
+    content: "👤";
+    font-size: 1.5em;
+    color: #b0b0c0;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    gap: 32px;
+    margin-top: 24px;
+    position: relative;
+}
+
+.agenda-dia {
+    background: #f7f5ff;
+    border-radius: 18px;
+    padding: 28px 28px 20px 28px;
+    box-shadow: 0 2px 8px #0001;
+    min-width: 320px;
+}
+
+.agenda-dia h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: #23222b;
+}
+
+.agenda-card {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.agenda-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    border-bottom: 1px solid #ece9fa;
+    padding-bottom: 12px;
+}
+
+.agenda-item:last-child {
+    border-bottom: none;
+}
+
+.agenda-hora {
+    font-weight: 600;
+    color: #5a50c8;
+    font-size: 1.1rem;
+    min-width: 48px;
+}
+
+.agenda-titulo {
+    font-weight: 600;
+    color: #23222b;
+    display: block;
+}
+
+.agenda-desc {
+    color: #8887a1;
+    font-size: 0.98rem;
+    display: block;
+}
+
+.tarefas-pendentes {
+    background: #fff;
+    border-radius: 18px;
+    padding: 28px 28px 20px 28px;
+    box-shadow: 0 2px 8px #0001;
+    min-width: 260px;
+    height: fit-content;
+}
+
+.tarefas-pendentes h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: #23222b;
+}
+
+.tarefas-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.tarefas-lista label {
+    font-size: 1.08rem;
+    color: #23222b;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.tarefas-lista input[type="checkbox"] {
+    accent-color: #5a50c8;
+    width: 18px;
+    height: 18px;
+}
+
+.calendario-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 28px 28px 20px 28px;
+    box-shadow: 0 2px 8px #0001;
+    min-width: 320px;
+    height: fit-content;
+}
+
+.calendario-card h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: #23222b;
+}
+
+.calendario {
+    width: 100%;
+}
+
+.calendario-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.calendario-header button {
+    background: #f4f3ff;
+    border: none;
+    border-radius: 6px;
+    width: 28px;
+    height: 28px;
+    font-size: 1.2rem;
+    color: #5a50c8;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.calendario-header button:hover {
+    background: #e0deff;
+}
+
+.calendario-header span {
+    font-weight: 600;
+    color: #23222b;
+    font-size: 1.08rem;
+}
+
+.calendario-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+    text-align: center;
+    font-size: 1.05rem;
+    color: #23222b;
+}
+
+.calendario-grid > div {
+    padding: 6px 0;
+    border-radius: 50%;
+    transition: background 0.2s;
+}
+
+.calendario-grid > div.dia-hoje {
+    background: #e0deff;
+    color: #5a50c8;
+    font-weight: 600;
+}
+
+.add-btn {
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #5a50c8;
+    color: #fff;
+    font-size: 2.5rem;
+    border: none;
+    box-shadow: 0 4px 16px #5a50c84d;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+.add-btn:hover {
+    background: #3d36a7;
+}
