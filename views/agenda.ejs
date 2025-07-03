@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendário</title>
+    <link rel="stylesheet" href="/css/agenda.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,600,700&display=swap">
+</head>
+<body style="background:#fafbfc;">
+    <div class="main-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <span class="icon-calendar"></span>
+                <span class="sidebar-title">Agendário</span>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active"><span class="icon-home"></span> Home</a>
+                <a href="#" class="nav-item"><span class="icon-calendar2"></span> Calendário</a>
+                <a href="#" class="nav-item"><span class="icon-tasks"></span> Tarefas</a>
+                <a href="#" class="nav-item"><span class="icon-settings"></span> Configurações</a>
+            </nav>
+        </aside>
+        <section class="content">
+            <header class="content-header">
+                <form action="/logout" method="get" style="margin:0;">
+                    <button type="submit" style="background:#e0deff;color:#5a50c8;border:none;padding:8px 18px;border-radius:8px;font-weight:600;cursor:pointer;transition:background 0.2s;">Sair</button>
+                </form>
+                <div class="profile-icon"><span class="icon-user"></span></div>
+            </header>
+            <div class="dashboard">
+                <div class="agenda-dia">
+                    <h2>Agenda do Dia</h2>
+                    <div class="agenda-card">
+                        <div class="agenda-item">
+                            <span class="agenda-hora">09:00</span>
+                            <div>
+                                <span class="agenda-titulo">Reunião com a equipe</span>
+                                <span class="agenda-desc">Consulta médica</span>
+                            </div>
+                        </div>
+                        <div class="agenda-item">
+                            <span class="agenda-hora">11:00</span>
+                            <div>
+                                <span class="agenda-titulo">Consulta médica</span>
+                                <span class="agenda-desc">Almoço com o cliente</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tarefas-pendentes">
+                    <h2>Tarefas Pendentes</h2>
+                    <div class="tarefas-lista">
+                        <label><input type="checkbox"> Enviar relatório</label>
+                        <label><input type="checkbox"> Comprar suprimentos</label>
+                        <label><input type="checkbox"> Responder emails</label>
+                    </div>
+                </div>
+                <div class="calendario-card">
+                    <h2>Tarefas Pendentes</h2>
+                    <div class="calendario">
+                        <div class="calendario-header">
+                            <button>&lt;</button>
+                            <span>Abril 2024</span>
+                            <button>&gt;</button>
+                        </div>
+                        <div class="calendario-grid">
+                            <div>S</div><div>T</div><div>Q</div><div>Q</div><div>S</div><div>S</div><div>S</div>
+                            <div></div><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div>
+                            <div>7</div><div>8</div><div>9</div><div>10</div><div>11</div><div>12</div><div>13</div>
+                            <div>14</div><div>15</div><div>16</div><div>17</div><div>18</div><div>19</div><div>20</div>
+                            <div class="dia-hoje">21</div><div>22</div><div>23</div><div>24</div><div>25</div><div>26</div><div>27</div>
+                            <div>28</div><div>29</div><div>30</div><div></div><div></div><div></div><div></div>
+                        </div>
+                    </div>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
